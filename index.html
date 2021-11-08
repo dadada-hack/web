@@ -64,45 +64,17 @@ head {
 body {
   &:before {
     background-position: 210px 180px;
-    animation-delay: -4s;
-  }
-  &:after {
-    background-position: -120px 40px;
-    animation-delay: -6s;
-  }
-}
+*{box-sizing: border-box;}
 
-div {
-  &:before {
-    background-position: 130px 140px;
-    animation-delay: -8s;
-  }
-  &:after {
-    background-position: -150px -90px;
-    animation-delay: -10s;
-  }
-}
-
-    
-@keyframes warp {
-  from {
-    transform: rotate(-60deg) translateZ(-300px);
-  }
-  to {
-    transform: rotate(60deg) translateZ(300px);
-  }
-
-}
-
-@keyframes text {
-  from {
-    opacity: 0;
-    transform: translate3d(-50%, -50%, -1200px);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(-50%, -50%, 0);
-  }
+html, body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  font-family: 'Arial', sans-serif;
 }
 
 .container{  
@@ -167,8 +139,8 @@ div {
 </style>
 </head>
 <body>
+<body bgcolor ="#000000"><br>
 <center>
-<div>
 <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #696969; border-radius: 10px; background-color: #696969;">
 <img src="logo.png" width="150" height="150">
 </div>
@@ -192,7 +164,6 @@ div {
     <input class="nice-textbox" type="text"/>
     <label class="nice-label" for="Username"></label><br>
 </div></div><a href="system.html" class="btn-square">GO</a>
-</div>
 </div>
 </body>
 </html>
