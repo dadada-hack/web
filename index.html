@@ -5,6 +5,39 @@
   <meta charset=“UFT-8”>
   <title>Anonymous invalid</title>
   <style>
+html {
+  perspective: 300px;
+  overflow: hidden;
+  background: #0000
+  &:before {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    color: #888;
+    font-size: 200%;
+    font-family: Menlo, "Courier New", monospace;
+    text-align: center;
+    white-space: pre;
+    content: " ";
+    z-index: 1;
+    animation: 6s text ease-out;
+  }
+}
+html,
+head, head:before, head:after,
+body, body:before, body:after,
+div ,  div:before,  div:after {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 head,
 body,
 div {
@@ -134,7 +167,6 @@ div {
 </style>
 </head>
 <body>
-<body bgcolor="#000000"><br>
 <center>
 <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #696969; border-radius: 10px; background-color: #696969;">
 <img src="logo.png" width="150" height="150">
